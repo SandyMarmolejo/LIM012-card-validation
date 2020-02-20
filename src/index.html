@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ 
+<head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+</head>
+ 
+<body>
+    <header>
+        <div id="divInicio">
+            <h1> Validación de Tarjeta de Crédito</h1>
+            <p> Para saber si la tarjeta de crédito está activa y comprobar que es válida. Ahora lo podrás saber con este valioso verificador de tarjetas de crédito online.</p>
+        </div>
+    </header>
+    <main>
+        <div id="divSeleccioneTarjeta">
+            <label>Seleccione el tipo de tarjeta</label>
+            <select>
+                <option value="X" selected="true">-Seleccione-</option>
+                <option value="Y">Visa</option>
+                <option value="Z">Mastercard</option>
+            </select>
+        </div>
+        <br>
+        <div id="divIngreseNumeroTarjeta">
+            <label id="lblsoloNumeros">Ingrese los dígitos de la tarjeta.</label>
+            <br><br>
+            <input type="text" pattern="[0-9]" name="txtNumeroTarjeta" maxlength="16" />
+            <br><br>
+            <button type=" button" id="btnValidar">Validar Tarjeta</button>
+        </div>
+ 
+        <div id="divResultadoValido" class="ocultarDiv">
+            <label>¡Felicitaciones!</label>
+            <p>La tarjeta de crédito es válida</p>
+        </div>
+ 
+        <div id="divResultadoInvalido" class="ocultarDiv">
+            <label>Lo sentimos</label>
+            <p>La tarjeta de crédito es inválida</p>
+        </div>
+ 
+        <div id="divRegresar" class="ocultarDiv">
+            <button type="button" id="btnRegresar">Regresar</button>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p>Copyright &copy; ValidaciónTarjeta 2020</p>
+    </footer>
     <script src="index.js" type="module"></script>
-  </body>
+</body>
+ 
 </html>

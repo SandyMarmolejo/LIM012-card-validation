@@ -1,0 +1,16 @@
+h1 {
+    color: rgba(112, 108, 124, 0.753);
+}
+ 
+body {
+    font-family: sans-serif;
+    background-image: url('https://thumbs.dreamstime.com/z/pila-del-primer-de-tarjetas-de-cr%C3%A9dito-visa-y-mastercard-cr%C3%A9dito-debe-y-electr%C3%B3nico-aislado-en-el-fondo-blanco-con-la-95474089.jpg');
+}
+ 
+.ocultarDiv {
+    display: none;
+}
+ 
+.mostrarDiv {
+    display: block;
+}
