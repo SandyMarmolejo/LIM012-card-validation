@@ -13,7 +13,7 @@ const reverse = function (array) {
  for (let i = lastPosition; i>=0; i--){
    newArray.push(array[i]);
  }
-  //Solo si ocupa posicion impar se le multiplica x 2 al numero, los demas se mantienen
+ 
 let suma = 0;
 let tarjeta = 0;
    for (i= 0; i <= lastPosition; i = i + 1 ) {
@@ -33,12 +33,15 @@ let tarjeta = 0;
    }
  
  
-   if (suma%10==0){
-        tarjeta=true;
+   if (suma % 10 == 0){
+        tarjeta = true;
       }
       else {
-        tarjeta= false;
+        tarjeta = false;
       }
  
-return tarjeta;
-}
+    return tarjeta;
+   }
+
+  
+fuction ocultarDigitos 
