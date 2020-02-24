@@ -1,14 +1,11 @@
 # Tarjeta de crédito válida
 
-## Índice
+## Resumen del proyecto
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
+El presente proyecto pretende contribuir a los bancos para la verificación de los números de las tarjetas de crédito que antes de ser entregada a un cliente se puedan  validar y verificar que se encuentre activa y así el cliente no tenga insconvenientes a futuro en sus operaciones bancarias.
+
+![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png) 
+
 
 ***
 
