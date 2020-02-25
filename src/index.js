@@ -1,6 +1,4 @@
-import * as validator from './validator.js';
-
-console.log(validator);
+import validator from './validator.js';
 
 //Evento boton validar
 const btnValidar = document.getElementById("btnValidar");
@@ -14,7 +12,7 @@ btnValidar.addEventListener("click", () => {
     
     document.getElementById("divRegresar").className = "mostrarDiv";
 
-    if (validator.validarTarjeta(numeroTarjeta)) {
+    if (validator.isValid(numeroTarjeta)) {
         document.getElementById("txtNumeroTarjetaEnmascarados").value = validator.maskify(numeroTarjeta);
         document.getElementById("divResultadoValido").className = "mostrarDiv";
     }
