@@ -17,7 +17,7 @@ btnValidar.addEventListener("click", () => {
         document.getElementById("divResultadoValido").className = "mostrarDiv";
     }
     else {
-        document.getElementById("txtNumeroTarjetaEnmascarados").value = "";
+        document.getElementById("txtNumeroTarjetaEnmascaradosInvalido").value = validator.maskify(numeroTarjeta);
         document.getElementById("divResultadoInvalido").className = "mostrarDiv";
    }
 });
@@ -29,7 +29,6 @@ btnRegresar.addEventListener("click", () => {
     document.getElementById("divResultadoValido").className = "ocultarDiv";
     document.getElementById("divResultadoInvalido").className = "ocultarDiv";
     document.getElementById("divRegresar").className = "ocultarDiv";
-
     document.getElementById("divInicio").className = "mostrarDiv";
     document.getElementById("divIngreseNumeroTarjeta").className = "mostrarDiv";
     document.getElementById("divSeleccioneTarjeta").className = "mostrarDiv";

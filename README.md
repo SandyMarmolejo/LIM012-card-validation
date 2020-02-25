@@ -4,8 +4,11 @@
 
 El presente proyecto pretende contribuir a los bancos para la verificación de los números de las tarjetas de crédito que antes de ser entregada a un cliente se puedan  validar y verificar que se encuentre activa y así el cliente no tenga insconvenientes a futuro en sus operaciones bancarias.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png) 
-
+<img src="Imagenes\Desktop - 1.png">
+</br>
+<img src="Imagenes\Desktop - 2.png">
+</br>
+<img src="Imagenes\Desktop - 3.png">
 
 ***
 

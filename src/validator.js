@@ -1,13 +1,7 @@
 const validator = {
+
     isValid: (array) => {
-           /* const validarTarjeta = function (numeroTarjeta) {
-            var arrayTarjeta = Array.from(numeroTarjeta)
-        
-            var esTarjetaValida = reverse(arrayTarjeta);
-            return esTarjetaValida;
-        
-        };*/
-        
+ 
             const newArray = [];
         
             const size = array.length;
@@ -49,6 +43,7 @@ const validator = {
     },
 
     maskify: (numeroTarjeta) => {
+
         if (numeroTarjeta.length <= 4) {
             return numeroTarjeta;
         }
