@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
 </head>
- 
+
 <body>
-    <header>
-        <div id="divInicio">
+    <header class="grid-container">
+        <div id="divInicio" class="item1">
             <h1> Validación de Tarjeta de Crédito</h1>
-            <p> Para saber si la tarjeta de crédito está activa y comprobar que es válida. Ahora lo podrás saber con este valioso verificador de tarjetas de crédito online.</p>
+            <p> Para saber si la tarjeta de crédito está activa y comprobar que es válida. Ahora lo podrás saber con
+                este valioso verificador de tarjetas de crédito online.</p>
         </div>
     </header>
     <main>
-        <div id="divSeleccioneTarjeta">
-            <label>Seleccione el tipo de tarjeta</label>
+        <div id="divSeleccioneTarjeta" div class="item2">
+            <label>Tipo de tarjeta</label>
             <select>
                 <option value="X" selected="true">-Seleccione-</option>
                 <option value="Y">Visa</option>
@@ -24,36 +25,37 @@
             </select>
         </div>
         <br>
-        <div id="divIngreseNumeroTarjeta">
-            <label id="lblsoloNumeros">Ingrese los dígitos de la tarjeta.</label>
+        <div id="divIngreseNumeroTarjeta" class="item3>
+            <label id=" lblsoloNumeros">Ingrese los dígitos de la tarjeta.</label>
             <br><br>
             <input type="text" pattern="[0-9]" name="txtNumeroTarjeta" id="txtNumeroTarjeta" maxlength="16" />
             <br><br>
             <button type=" button" id="btnValidar">Validar Tarjeta</button>
         </div>
- 
+
         <div id="divResultadoValido" class="ocultarDiv">
             <label>¡Felicitaciones!</label>
             <input type="text" id="txtNumeroTarjetaEnmascarados" disabled />
             <p>La tarjeta de crédito es válida</p>
         </div>
- 
+
         <div id="divResultadoInvalido" class="ocultarDiv">
             <label>Lo sentimos</label>
             <input type="text" id="txtNumeroTarjetaEnmascaradosInvalido" disabled />
             <p>La tarjeta de crédito es inválida</p>
         </div>
- 
+
         <div id="divRegresar" class="ocultarDiv">
             <button type="button" id="btnRegresar">Regresar</button>
         </div>
     </main>
     <br>
+    <div id="" class="item5"></div>
     <footer>
-        <p>Copyright &copy; ValidaciónTarjeta 2020</p>
+            <p> Copyright &copy; ValidaciónTarjeta 2020</p>
     </footer>
-    <script src="index.js" type="module"></script>
+       </div>
+       <script src="index.js" type="module"></script>
 </body>
- 
-</html>
 
+</html>

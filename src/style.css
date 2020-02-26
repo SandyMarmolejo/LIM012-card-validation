@@ -1,16 +1,58 @@
+  .item1 {
+    grid-area: header;
+  }
+
+  .item2 {
+    grid-area: menu;
+  }
+
+  .item3 {
+    grid-area: main;
+  }
+
+  .item4 {
+    grid-area: right;
+  }
+
+  .item5 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  
+  .grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+
 h1 {
-    color: rgba(112, 108, 124, 0.753);
+  color: rgba(112, 108, 124, 0.753);
 }
- 
+
 body {
-    font-family: sans-serif;
-    background-image: url('https://thumbs.dreamstime.com/z/pila-del-primer-de-tarjetas-de-cr%C3%A9dito-visa-y-mastercard-cr%C3%A9dito-debe-y-electr%C3%B3nico-aislado-en-el-fondo-blanco-con-la-95474089.jpg');
+  font-family: sans-serif;
+  background-image: url('https://thumbs.dreamstime.com/z/pila-del-primer-de-tarjetas-de-cr%C3%A9dito-visa-y-mastercard-cr%C3%A9dito-debe-y-electr%C3%B3nico-aislado-en-el-fondo-blanco-con-la-95474089.jpg');
 }
- 
+
 .ocultarDiv {
-    display: none;
+  display: none;
 }
- 
+
 .mostrarDiv {
-    display: block;
+  display: block;
 }
+
+
