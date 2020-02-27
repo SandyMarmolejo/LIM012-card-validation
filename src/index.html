@@ -8,15 +8,15 @@
 </head>
 
 <body>
-    <header class="grid-container">
-        <div id="divInicio" class="item1">
+    <header>
+        <div id="divInicio" class="grid">
             <h1> Validación de Tarjeta de Crédito</h1>
             <p> Para saber si la tarjeta de crédito está activa y comprobar que es válida. Ahora lo podrás saber con
                 este valioso verificador de tarjetas de crédito online.</p>
         </div>
     </header>
     <main>
-        <div id="divSeleccioneTarjeta" div class="item2">
+        <div id="divSeleccioneTarjeta" class="a">
             <label>Tipo de tarjeta</label>
             <select>
                 <option value="X" selected="true">-Seleccione-</option>
@@ -25,27 +25,27 @@
             </select>
         </div>
         <br>
-        <div id="divIngreseNumeroTarjeta" class="item3>
+        <div id="divIngreseNumeroTarjeta" class="b">
             <label id=" lblsoloNumeros">Ingrese los dígitos de la tarjeta.</label>
             <br><br>
             <input type="text" pattern="[0-9]" name="txtNumeroTarjeta" id="txtNumeroTarjeta" maxlength="16" />
             <br><br>
-            <button type=" button" id="btnValidar">Validar Tarjeta</button>
+            <button type=" button" id="btnValidar" class="c">Validar Tarjeta</button>
         </div>
 
-        <div id="divResultadoValido" class="ocultarDiv">
+        <div id="divResultadoValido" class="ocultarDiv" class="t">
             <label>¡Felicitaciones!</label>
             <input type="text" id="txtNumeroTarjetaEnmascarados" disabled />
             <p>La tarjeta de crédito es válida</p>
         </div>
 
-        <div id="divResultadoInvalido" class="ocultarDiv">
+        <div id="divResultadoInvalido" class="ocultarDiv" class="f">
             <label>Lo sentimos</label>
             <input type="text" id="txtNumeroTarjetaEnmascaradosInvalido" disabled />
             <p>La tarjeta de crédito es inválida</p>
         </div>
 
-        <div id="divRegresar" class="ocultarDiv">
+        <div id="divRegresar" class="ocultarDiv" class="v">
             <button type="button" id="btnRegresar">Regresar</button>
         </div>
     </main>
