@@ -1,43 +1,78 @@
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template: repeat(4, 1fr);
+body {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url("https://image.shutterstock.com/z/stock-photo-ratingen-germany-june-closeup-studio-shot-of-credit-cards-issued-by-the-three-major-169493330.jpg");
+}
 
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+header {
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: #e5e5e5;
+}
 
-    background-color: blueviolet;
-    padding: 10px;
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: #e5e5e5;
+}
 
-    justify-content: center;
-    height: 100vh;
+h1 {
+  color: #03004e;
+}
 
-  }
-
-  .formulario {
-    border: 1px solid red;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-template-rows: 80px 200px;
-    image
-  }
-
-  .numeros {
-    border: 1px solid red;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0;
+}
 
 
 
-  h1 {
-    color: rgba(112, 108, 124, 0.753);
-  }
 
-  body {
-    font-family: sans-serif;
-    background-image: url('https://thumbs.dreamstime.com/z/pila-del-primer-de-tarjetas-de-cr%C3%A9dito-visa-y-mastercard-cr%C3%A9dito-debe-y-electr%C3%B3nico-aislado-en-el-fondo-blanco-con-la-95474089.jpg');
-  }
+
+
+
+.formulario {
+  text-align: center;
+  margin: 350px;
+  line-height: 25px;
+  font-size: 15px;
+  padding: 10px;
+  background: #ddd;
+  flex-direction: column;
+}
+
+.box {
+  text-align: center;
+  border: 2px solid black;
+  width: 40%;
+  height: 30px;
+  background-color: whitesmoke;
+}
+
+
+
+.button {
+  margin: 5px;
+  width: 150px;
+  text-align: center;
+  border: 2px solid;
+  background: #ff9a03;
+  padding: 10px;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  color: #03004e;
+  font-size: 15px;
+  display: inline-block;
+}
+
+
 
   .ocultarDiv {
     display: none;
