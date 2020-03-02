@@ -9,14 +9,16 @@
 
 <body>
     <header>
-        <div id="divInicio" class="grid">
+        
+        <div id="divInicio">
             <h1> Validación de Tarjeta de Crédito</h1>
             <p> Para saber si la tarjeta de crédito está activa y comprobar que es válida. Ahora lo podrás saber con
                 este valioso verificador de tarjetas de crédito online.</p>
         </div>
     </header>
     <main>
-        <div id="divSeleccioneTarjeta" class="a">
+        <section class="container">
+        <div id="divSeleccioneTarjeta" class="formulario">
             <label>Tipo de tarjeta</label>
             <select>
                 <option value="X" selected="true">-Seleccione-</option>
@@ -25,36 +27,37 @@
             </select>
         </div>
         <br>
-        <div id="divIngreseNumeroTarjeta" class="b">
-            <label id=" lblsoloNumeros">Ingrese los dígitos de la tarjeta.</label>
+        <div id="divIngreseNumeroTarjeta" class="numeros">
+            <label id=" lblsoloNumeros" >Ingrese los dígitos de la tarjeta.</label>
             <br><br>
             <input type="text" pattern="[0-9]" name="txtNumeroTarjeta" id="txtNumeroTarjeta" maxlength="16" />
             <br><br>
-            <button type=" button" id="btnValidar" class="c">Validar Tarjeta</button>
+            <button type=" button" id="btnValidar" class="buttonInicio">Validar Tarjeta</button>
         </div>
 
-        <div id="divResultadoValido" class="ocultarDiv" class="t">
+        <div id="divResultadoValido" class="ocultarDiv" class="formulario">
             <label>¡Felicitaciones!</label>
             <input type="text" id="txtNumeroTarjetaEnmascarados" disabled />
             <p>La tarjeta de crédito es válida</p>
         </div>
 
-        <div id="divResultadoInvalido" class="ocultarDiv" class="f">
+        <div id="divResultadoInvalido" class="ocultarDiv" class="formulario">
             <label>Lo sentimos</label>
             <input type="text" id="txtNumeroTarjetaEnmascaradosInvalido" disabled />
             <p>La tarjeta de crédito es inválida</p>
         </div>
 
-        <div id="divRegresar" class="ocultarDiv" class="v">
+        <div id="divRegresar" class="ocultarDiv" class="formulario">
             <button type="button" id="btnRegresar">Regresar</button>
         </div>
+    </section>
     </main>
     <br>
-    <div id="" class="item5"></div>
     <footer>
-            <p> Copyright &copy; ValidaciónTarjeta 2020</p>
+            <p> Copyright &copy; Sandy Marmolejo, ValidaciónTarjeta 2020</p>
     </footer>
        </div>
+    
        <script src="index.js" type="module"></script>
 </body>
 
