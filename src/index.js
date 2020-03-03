@@ -18,7 +18,7 @@ btnValidar.addEventListener("click", () => {
     }
     else {
         document.getElementById("txtNumeroTarjetaEnmascaradosInvalido").value = validator.maskify(numeroTarjeta);
-        document.getElementById("divResultadoInvalido").className = "mostrarDiv";
+        document.getElementById("divResultadoInvalido").className = "mostrarDiv";      
    }
 });
 
