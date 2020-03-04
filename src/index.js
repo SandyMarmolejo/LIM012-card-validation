@@ -1,6 +1,5 @@
 import validator from './validator.js';
 
-//Evento boton validar
 const btnValidar = document.getElementById("btnValidar");
 
 btnValidar.addEventListener("click", () => {
@@ -22,12 +21,11 @@ btnValidar.addEventListener("click", () => {
     }
 });
 
-//Evento boton regresar
+
 const btnRegresar = document.getElementById("btnRegresar");
 
 btnRegresar.addEventListener("click", () => {
     document.getElementById("txtNumeroTarjeta").value = "";
-    document.getElementById("txtNumeroTarjeta").focus();
     document.getElementById("divResultadoValido").className = "ocultarDiv";
     document.getElementById("divResultadoInvalido").className = "ocultarDiv";
     document.getElementById("divRegresar").className = "ocultarDiv";
@@ -35,3 +33,5 @@ btnRegresar.addEventListener("click", () => {
     document.getElementById("divIngreseNumeroTarjeta").className = "mostrarDiv";
     document.getElementById("divSeleccioneTarjeta").className = "mostrarDiv";
 });
+
+

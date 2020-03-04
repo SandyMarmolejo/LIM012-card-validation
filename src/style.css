@@ -18,6 +18,8 @@ footer {
   text-align: center;
   background: #1abc9c;
   color: #e5e5e5;
+  flex: auto;
+  
 }
 
 h1 {
@@ -30,12 +32,6 @@ h1 {
   flex-direction: column;
   padding: 0;
 }
-
-
-
-
-
-
 
 .formulario {
   text-align: center;
@@ -55,8 +51,6 @@ h1 {
   background-color: whitesmoke;
 }
 
-
-
 .button {
   margin: 5px;
   width: 150px;
@@ -71,8 +65,6 @@ h1 {
   font-size: 15px;
   display: inline-block;
 }
-
-
 
   .ocultarDiv {
     display: none;
