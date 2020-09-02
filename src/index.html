@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Valida tu tarjeta de credito aquí</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div id="divInicio">
-                <h1> Validación de Tarjeta de Crédito</h1>
-                <p> Para saber si la tarjeta de crédito está activa y comprobar que es válida. Ahora lo podrás saber con
-                    este valioso verificador de tarjetas de crédito online.</p>
+    <header id="header">
+        <h1>Verificador de Tarjetas de Crédito</h1>
+        <p>¿Quieres saber si el número tarjeta de crédito es válido?.<br />
+            Ahora lo podrás saber con este valioso verificador de tarjetas de crédito online.</p>
+    </header>
+    <main>
+        <div id="divValidateCard">
+            <select>
+                <option value="X" selected="true">- Seleccione el Tipo de Tarjeta -</option>
+                <option value="A">Visa</option>
+                <option value="B">Mastercard</option>
+                <option value="C">American Express</option>
+                <option value="D">Diners Club</option>
+            </select>
+            <input type="text" pattern="[0-9]" name="txtNumeroTarjeta" id="txtNumeroTarjeta" maxlength="16"
+                placeholder="Ingrese el número de tarjeta" />
+              <input type="button" id="btnValidar" value="Validar Tarjeta" />
+              <br>
+            <div id="divFirstValidation" class="hide">
+                <h3 id="lblRequiredCard">Seleccione el tipo de tarjeta e ingrese el nro de tarjeta</h3>
             </div>
-        </header>
-        <main class="formulario">
-            <div id="divSeleccioneTarjeta">
-                <label>Tipo de tarjeta</label>
-                <select>
-                    <option value="X" selected="true">-Seleccione-</option>
-                    <option value="A">Visa</option>
-                    <option value="B">Mastercard</option>
-                    <option value="C">American Express</option>
-                    <option value="D">Diners Club</option>
-                </select>
-                <br><br>
-                <img src="Imagenes/logo tarjetas.jpg" style="width:30%">
-            </div>
+              
+        </div>
+        <div id="divValidationResult" class="hide">
+            <h2 id="lblValidCard">¡Felicitaciones! La tarjeta de crédito es válida &#128522;!</h2>
+            <h2 id="lblInvalidCard">¡Cuidado! La tarjeta de crédito es incorrecta &#128532;!.</h2>
+            <input type="text" id="txtMaskedCardNumber" disabled />
+            <br/>
+            <input type="button" id="btnBack" value="Regresar" />
+        </div>
 
-            <div id="divIngreseNumeroTarjeta">
-                <label id=" lblsoloNumeros">Ingrese los dígitos de la tarjeta.</label>
-                <br><br>
-                <input type="text" pattern="[0-9]" name="txtNumeroTarjeta" id="txtNumeroTarjeta" maxlength="16"
-                    class="box" />
-                <br><br>
-                <button type=" button" id="btnValidar" class="button">Validar Tarjeta</button>
-            </div>
-
-            <div id="divResultadoValido" class="ocultarDiv">
-                <label>¡Felicitaciones!</label>
-                <input type="text" id="txtNumeroTarjetaEnmascarados" class="box" disabled />
-                <p>La tarjeta de crédito es válida</p>
-            </div>
-
-            <div id="divResultadoInvalido" class="ocultarDiv">
-                <label>Lo sentimos</label>
-                <input type="text" id="txtNumeroTarjetaEnmascaradosInvalido" class="box" disabled />
-                <p>La tarjeta de crédito es inválida</p>
-            </div>
-
-            <div id="divRegresar" class="ocultarDiv">
-                <button type="button" id="btnRegresar" class="button">Regresar</button>
-            </div>
-        </main>
-        <footer>
-            <p> &copy; ValidaciónTarjeta 2020 </p>
-        </footer>
-    </div>
-    <script src="index.js" type="module"></script>
+    </main>
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/SandyMarmolejo" target="_blank" class="icon brands fa-github"><span
+                        class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/sandy-marmolejo/" target="_blank"
+                    class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Desarrollado por <a href="https://github.com/SandyMarmolejo" target="_blank"> Sandy Marmolejo</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/index.js" type="module"></script>
 </body>
+
 </html>

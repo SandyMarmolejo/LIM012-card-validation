@@ -3,9 +3,7 @@ const validator = {
     isValid: (array) => {
 
         const newArray = [];
-
         const size = array.length;
-
         const lastPosition = size - 1;
 
         for (let i = lastPosition; i >= 0; i--) {
@@ -32,6 +30,7 @@ const validator = {
             newArray[i] = parseInt(newArray[i]);
             suma = suma + newArray[i];
         }
+
         if (suma % 10 == 0) {
             esTarjetaValida = true;
         }
@@ -43,13 +42,13 @@ const validator = {
     },
 
     maskify: (numeroTarjeta) => {
-
+        let arrayParaOcultarNumeros = [];
+      
         if (numeroTarjeta.length <= 4) {
             return numeroTarjeta;
         }
 
         const numeroTarjetaMenosCuatroLetras = numeroTarjeta.slice(0, numeroTarjeta.length - 4);
-        let arrayParaOcultarNumeros = [];
         const ultimosCuatroNumeros = numeroTarjeta.slice(-4);
 
         for (let i = 0; i < numeroTarjetaMenosCuatroLetras.length; i++) {
@@ -60,12 +59,6 @@ const validator = {
 
         return arrayParaOcultarNumerosConcatenado + ultimosCuatroNumeros;
     }
-
 };
 
 export default validator;
-
-
-
-
-
